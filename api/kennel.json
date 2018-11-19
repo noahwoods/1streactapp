@@ -1,0 +1,76 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alfonso Miranda"
+    },
+    {
+      "id": 2,
+      "name": "Jordan Nelson"
+    },
+    {
+      "id": 3,
+      "name": "Zoe LeBlanc"
+    },
+    {
+      "id": 4,
+      "name": "Blaise Roberts"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "500 Doggo Lane"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "114 Meow Street"
+    }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Chewbarka",
+      "ownersId": 1
+    },
+    {
+      "id": 2,
+      "name": "ANTonio",
+      "ownerId": 2
+    },
+    {
+      "id": 3,
+      "name": "Hasselhoff",
+      "ownersId": 3
+    },
+    {
+      "id": 4,
+      "name": "Sherlock Bones",
+      "ownersId": 4
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Peter Parker",
+      "phone": "774-337-6261"
+    },
+    {
+      "id": 2,
+      "name": "Scott Lang",
+      "phone": "843-268-6261"
+    },
+    {
+      "id": 3,
+      "name": "Peter Quill",
+      "phone": "467-827-5673"
+    },
+    {
+      "id": 4,
+      "name": "Tony Stark",
+      "phone": "843-626-4766"
+    }
+  ]
+}
