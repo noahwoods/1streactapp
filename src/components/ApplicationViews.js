@@ -40,43 +40,28 @@ class ApplicationViews extends Component {
 
   }
 
-  deleteAnimal = id => {
-    return fetch(`http://localhost:5002/animals/${id}`, {
-      method: "DELETE"
-    })
-      .then(e => e.json())
-      .then(() => fetch(`http://localhost:5002/animals`))
-      .then(e => e.json())
-      .then(animals => this.setState({
+
+  deleteAnimal = (id) => {
+    return AnimalManager.removeAndList(id)
+    .then(animals => this.setState({
         animals: animals
       })
-      )
+    )
   }
 
-  deleteEmployee = id => {
-    return fetch(`http://localhost:5002/employees/${id}`, {
-      method: "DELETE"
-    })
-      .then(x => x.json())
-      .then(() => fetch(`http://localhost:5002/employees`))
-      .then(x => x.json())
-      .then(employees => this.setState({
+  deleteEmployee = (id) => {
+    return EmployeeManager.removeAndList(id)
+    .then(employees => this.setState({
         employees: employees
       })
-      )
+    )
   }
-
-  deleteOwner = id => {
-    return fetch(`http://localhost:5002/owners/${id}`, {
-      method: "DELETE"
-    })
-      .then(o => o.json())
-      .then(() => fetch(`http://localhost:5002/owners`))
-      .then(o => o.json())
-      .then(owners => this.setState({
+  deleteOwner = (id) => {
+    return OwnerManager.removeAndList(id)
+    .then(owners => this.setState({
         owners: owners
       })
-      )
+    )
   }
 
 
@@ -95,7 +80,6 @@ class ApplicationViews extends Component {
               animals={this.state.animals}
               owners={this.state.owners}
               deleteAnimal={this.deleteAnimal} />
-
           )
         }} />
         <Route path="/employees" render={(props) => {

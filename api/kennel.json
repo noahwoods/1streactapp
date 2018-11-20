@@ -49,6 +49,11 @@
       "id": 4,
       "name": "Sherlock Bones",
       "ownersId": 4
+    },
+    {
+      "id": 5,
+      "name": "Dapper Doug",
+      "ownersId":5
     }
   ],
   "owners": [
@@ -71,6 +76,11 @@
       "id": 4,
       "name": "Tony Stark",
       "phone": "843-626-4766"
+    },
+    {
+      "id": 5,
+      "name": "Steve Rogers",
+      "phone": "328-751-1943"
     }
   ]
 }
